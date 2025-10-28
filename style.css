@@ -75,15 +75,6 @@ textarea{min-height:120px}
   .contact-grid{grid-template-columns:1fr}
   nav a{display:none}
 }
-/* Ajuste del logo */
-.logo-img {
-  width: 80px;              /* tamaño más razonable */
-  height: auto;
-  border-radius: 10px;      /* esquinas suaves */
-  object-fit: contain;      /* mantiene proporciones */
-  background-color: #000;   /* por si el logo tiene transparencia */
-  padding: 4px;
-}
 
 header {
   display: flex;
