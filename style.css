@@ -75,3 +75,32 @@ textarea{min-height:120px}
   .contact-grid{grid-template-columns:1fr}
   nav a{display:none}
 }
+/* Ajuste del logo */
+.logo-img {
+  width: 80px;              /* tamaño más razonable */
+  height: auto;
+  border-radius: 10px;      /* esquinas suaves */
+  object-fit: contain;      /* mantiene proporciones */
+  background-color: #000;   /* por si el logo tiene transparencia */
+  padding: 4px;
+}
+
+/* Alineación del encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 880px) {
+  nav a {
+    display: inline-block;
+    margin: 6px 10px 0 0;
+  }
+  .logo-img {
+    width: 60px;
+  }
+}
