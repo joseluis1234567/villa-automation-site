@@ -9,14 +9,14 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand {
   display: flex;
   align-items: center;   
-  gap: 16px;             
+  gap: 20px;             
   padding: 6px 0;
 }
 
 .logo-img {
-  height: 90px;          
+  height: 100px;          
   width: auto;           
-  border-radius: 14px;
+  border-radius: 20px;
   object-fit: contain;   
   margin-right: 10px;
 }
