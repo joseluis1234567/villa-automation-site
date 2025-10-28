@@ -1,28 +1,15 @@
 :root{
-  --bg:#071026; 
-  --card:#071524; 
-  --accent:#0f6cff; 
-  --muted:#9fb0c9; 
-  --glass: rgba(255,255,255,0.03);
+  --bg:#071026; --card:#071524; --accent:#0f6cff; --muted:#9fb0c9; --glass: rgba(255,255,255,0.03);
 }
-
 *{box-sizing:border-box}
-
-body{
-  font-family:Inter,system-ui,Arial,Helvetica,sans-serif;
-  margin:0;
-  color:#e6eef8;
-  background:linear-gradient(180deg,var(--bg),#04101b);
-  overflow-x:hidden;
-}
-
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;color:#e6eef8;background:linear-gradient(180deg,var(--bg),#04101b);}
 .container{max-width:1100px;margin:0 auto;padding:36px 20px}
 header{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;gap:12px;align-items:center}
 .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6dd3ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#04263b}
 nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
 nav a:hover{color:#fff}
-.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px;position:relative;}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px}
 .hero h1{font-size:34px;margin:0 0 12px 0;line-height:1.02}
 .hero p{color:var(--muted);margin:0 0 18px}
 .cta{display:inline-block;background:var(--accent);color:#04263b;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none}
@@ -44,45 +31,10 @@ label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
 input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#eef}
 textarea{min-height:120px}
 .btn-submit{margin-top:10px;background:var(--accent);color:#04263b;padding:10px 14px;border-radius:8px;border:none;font-weight:700}
-
-/* 🌟 NUEVAS CLASES: IMÁGENES MÓVILES / ANIMADAS */
-.moving-img {
-  width: 120px;
-  position: absolute;
-  top: 65%;
-  left: 5%;
-  animation: float 6s ease-in-out infinite;
-  opacity: 0.85;
-  z-index: 1;
-}
-
-.moving-robot {
-  width: 160px;
-  position: absolute;
-  bottom: 5%;
-  right: 8%;
-  animation: sideFloat 8s ease-in-out infinite;
-  opacity: 0.9;
-  z-index: 1;
-}
-
-/* 🎞️ Animaciones suaves */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-25px); }
-}
-
-@keyframes sideFloat {
-  0%, 100% { transform: translateX(0px) rotate(0deg); }
-  50% { transform: translateX(-15px) rotate(-3deg); }
-}
-
-/* Responsividad */
 @media (max-width:880px){
   .hero{grid-template-columns:1fr;}
   .services{grid-template-columns:1fr}
   .projects{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
   nav a{display:none}
-  .moving-img, .moving-robot { display:none; } /* ocultar animaciones en móvil si pesan */
 }
