@@ -86,17 +86,17 @@ header {
 
 .brand {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  align-items: center;   /* centra verticalmente logo y texto */
+  gap: 16px;             /* espacio entre logo y texto */
+  padding: 6px 0;
 }
 
 .logo-img {
-  width: 100px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: contain;
-  background-color: #000;
-  padding: 4px;
+  height: 90px;          
+  width: auto;           
+  border-radius: 14px;
+  object-fit: contain;   
+  margin-right: 10px;
 }
 
 .brand-text {
